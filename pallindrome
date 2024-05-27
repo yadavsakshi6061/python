@@ -1,0 +1,13 @@
+def is_palindrome(s):
+    s = str(s)
+    length = len(s)
+    for i in range(length // 2):
+        if s[i] != s[length - i - 1]:
+            return False
+    return True
+
+t= input("Enter a string or number: ")
+if is_palindrome(t):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
