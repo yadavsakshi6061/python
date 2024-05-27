@@ -1,0 +1,12 @@
+from itertools import combinations_with_replacement
+
+letters = {'a': 2, 'h': 4, 'f': 1, 't': 3, 'k': 6, 'l': 1}
+total_combinations = 0
+
+def count_combinations(n):
+    return sum(1 for _ in combinations_with_replacement(letters.keys(), n))
+
+for count in range(3, max(letters.values()) + 1):
+    total_combinations += count_combinations(count)
+
+print("Numb of words with 3 or more letters:", total_combinations)
