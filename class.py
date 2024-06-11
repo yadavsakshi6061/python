@@ -25,9 +25,9 @@ print(img.size)  # Print the dimensions of the image (width, height)
 print(img.mode)  # Print the mode of the image (e.g., RGB, grayscale)
 
 # Display the image using matplotlib
-#plt.imshow(img)  # Plot the image
-#plt.axis('off')  # Turn off axis labels
-#plt.show()  # Show the plot
+plt.imshow(img)  # Plot the image
+plt.axis('off')  # Turn off axis labels
+plt.show()  # Show the plot
 
 #3 reads data from an Excel file ('file.xlsx') using pandas 
 
